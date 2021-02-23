@@ -114,3 +114,58 @@ public static void main( String[] args) {
 	
 	
 }
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+          android:background="@color/purple_200"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="19dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Biak Online Store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:text="Cari Sesuatu"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_cari"/>
+
+            <Button
+                android:layout_width="17dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_favorit" />
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>
